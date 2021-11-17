@@ -6,7 +6,6 @@ RUN apt-get install openssh-server -y
 RUN useradd -m vps
 RUN adduser vps sudo
 RUN echo 'vps:Usakhosting1!' | chpasswd
-RUN sed -i 's//bin/sh//bin/bash/g' /etc/passwd
 RUN service ssh restart 
 RUN mkdir -p /var/run/sshd 
 RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
