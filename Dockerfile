@@ -12,6 +12,7 @@ RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 RUN echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 RUN echo "LD_LIBRARY_PATH=/usr/lib64-nvidia" >> /root/.bashrc
 RUN echo "export LD_LIBRARY_PATH" >> /root/.bashrc 
+RUN service ssh restart 
 
 RUN wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 RUN unzip ngrok-stable-linux-amd64.zip
