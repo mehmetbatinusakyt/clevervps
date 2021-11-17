@@ -15,5 +15,5 @@ RUN echo "export LD_LIBRARY_PATH" >> /root/.bashrc
 
 RUN wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 RUN unzip ngrok-stable-linux-amd64.zip
-RUN ./ngrok authtoken 1p4KIn23NvQKkeuk9Y0cj45hOUK_4BP4aSeVFdzqws3MsL9rZ
+RUN ./ngrok authtoken 1pZnzb0R5eHFgpStdpiAMD49ry9_5fLmE4z6jU892CEn2QvkT
 RUN ./ngrok tcp 22
