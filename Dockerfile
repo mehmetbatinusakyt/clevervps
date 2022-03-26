@@ -1,5 +1,4 @@
-FROM consol/ubuntu-xfce-vnc
-RUN su root
+FROM ubuntu:20.04
 RUN apt-get update -y
 RUN apt-get install wget -y
 RUN apt-get install unzip -y
