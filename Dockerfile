@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM debian
 RUN apt-get update -y
 RUN apt-get install wget -y
 RUN apt-get install unzip -y
