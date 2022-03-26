@@ -1,5 +1,5 @@
 FROM consol/ubuntu-xfce-vnc
-RUN apt-get update -y && apt-get upgrade -y
+RUN apt-get update -y
 RUN apt-get install wget -y
 RUN apt-get install unzip -y
 RUN wget -q -c -nc https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
