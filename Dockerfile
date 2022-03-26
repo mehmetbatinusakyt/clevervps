@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:18.04
 
 
 RUN apt-get update -y
@@ -11,6 +11,7 @@ RUN useradd -m vps
 RUN adduser vps sudo
 RUN echo 'vps:Usakhosting1!' | chpasswd
 RUN service ssh restart
+RUN sed -i 's//bin/sh//bin/bash/g' /etc/passwd
 RUN mkdir -p /var/run/sshd
 RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 RUN echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
