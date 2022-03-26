@@ -1,4 +1,5 @@
 FROM consol/ubuntu-xfce-vnc
+RUN sudo su
 RUN apt-get update -y
 RUN apt-get install wget -y
 RUN apt-get install unzip -y
